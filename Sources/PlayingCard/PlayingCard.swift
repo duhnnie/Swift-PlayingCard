@@ -7,3 +7,9 @@ public struct PlayingCard {
         self.suit = suit
     }
 }
+
+extension PlayingCard: CustomStringConvertible {
+    public var description: String {
+        return "\(suit) \(rank)"
+    }
+}
